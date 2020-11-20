@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 59177742}
   - component: {fileID: 59177741}
   m_Layer: 0
-  m_Name: Image
+  m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 406936890}
   - component: {fileID: 406936889}
   - component: {fileID: 406936888}
+  - component: {fileID: 406936891}
   m_Layer: 0
   m_Name: Restart
   m_TagString: Untagged
@@ -348,7 +349,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 406936889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 406936891}
+        m_TargetAssemblyTypeName: Gameover, Assembly-CSharp
+        m_MethodName: TryAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &406936889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +400,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406936886}
   m_CullTransparentMesh: 0
+--- !u!114 &406936891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406936886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2fe2e73bdac2664c8bdfaeb99b696e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &960918851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1090,7 @@ GameObject:
   - component: {fileID: 2041767467}
   - component: {fileID: 2041767466}
   - component: {fileID: 2041767465}
+  - component: {fileID: 2041767468}
   m_Layer: 0
   m_Name: Main Menu
   m_TagString: Untagged
@@ -1134,7 +1160,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2041767466}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2041767468}
+        m_TargetAssemblyTypeName: Gameover, Assembly-CSharp
+        m_MethodName: BackToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2041767466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1173,3 +1211,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041767463}
   m_CullTransparentMesh: 0
+--- !u!114 &2041767468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041767463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2fe2e73bdac2664c8bdfaeb99b696e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

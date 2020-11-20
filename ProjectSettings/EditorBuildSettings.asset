@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Platformer.unity
     guid: 81c62290be3520841a6c9611a383443c
+  - enabled: 1
+    path: Assets/_Scenes/Game Over.unity
+    guid: b8870b891f00aee4a853a84cc249436b
   m_configObjects: {}
