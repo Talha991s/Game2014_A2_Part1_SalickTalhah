@@ -23,4 +23,8 @@ public class Gameover : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void GameOverButton()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
